@@ -11,4 +11,4 @@ justify-content: space-between;
 padding: 0 7px;
 ```
 
-还是可爱的猪猪 o(*￣▽￣*)ブ
+一样可爱 o(*￣▽￣*)ブ
