@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Winking Pig</title>
+    <style>
+            * {  
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    .pig {
+    width: 60px;
+    margin: 200px auto;
+    transform: scale(1.6);
+    /*   border: 1px solid #000;  */
+    }
+
+    .pig:hover .eyes-left, .pig:hover .eyes-right {
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+    }
+
+    .face {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 0 0 30% 30%;
+    border-top: 1px solid pink;
+    background-color: pink;
+    }
+
+    .ears-left, .ears-right {
+    width: 0;
+    height: 0;
+    border: 10px solid pink;
+    position: absolute;
+    bottom: 100%;
+    }
+
+    .ears-left {
+    right: 100%;
+    transform: translate(100%, 0);
+    border-right-color: transparent;
+    border-top-color: transparent;
+    }
+
+    .ears-right {
+    left: 100%;
+    transform: translate(-100%, 0);
+    border-left-color: transparent;
+    border-top-color: transparent;
+    }
+
+    .eyes-left, .eyes-right {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #555;
+    position: absolute;
+    top: 25%;
+    }
+
+    .eyes-left {
+    left: 20%;
+    }
+
+    .eyes-right {
+    right: 20%;
+    }
+
+    .nose {
+    width: 36px;
+    height: 20px;
+    bottom: 20%;
+    left: 12px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .nose > div {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #555;
+    border-radius: 50%;
+}
+    </style>
+</head>
+<body>
+    <body>
+        <!--   <h1>可爱的猪猪</h1> -->
+          <div class="pig">
+            <div class="face">
+              <div class="ears-left"></div>
+              <div class="ears-right"></div>
+              <div class="eyes-left"></div>
+              <div class="eyes-right"></div>
+              <div class="nose">
+                <div class="nose1"></div>
+                <div class="nose2"></div>
+              </div>
+            </div>
+          </div>
+        </body>
+</body>
+</html>
